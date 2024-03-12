@@ -1,0 +1,681 @@
+
+/*
+***** COLOR PALATE *****
+*
+* COLOR 1: #00bbd6
+* COLOR 2: #237194
+* COLOR 3: #faa32b
+* COLOR 4: #6fa53e
+* BACKGROUND COLOR: #f1f1f2
+*
+***** FONTS USED *****
+*
+* Arial
+* Times New Roman
+* Calibri
+* Montserrat
+*/
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0%;
+}
+
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #f1f1f2;
+    font-family: Arial;
+    
+}
+
+/*************************
+*   NAVIGATION BAR STYLE
+***************************/
+
+.top-nav{
+    margin: 0;
+    padding: auto;
+    text-align: center;
+    display: block;
+}
+
+nav{
+    margin: 0;
+    padding: 0;
+    background-color: #237194;
+}
+
+nav ul{
+    margin: 0%;
+    padding: 0.8%;
+    padding-bottom: 0%;
+    list-style-type: none;
+    font-family: 'Times New Roman';
+    overflow:hidden;
+}
+
+nav ul li{
+    float: left;
+    padding-left: 10px;
+}
+
+nav ul li:last-child{
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav ul li a{
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #00bbd6;
+}
+
+nav ul li a:hover {
+    border-radius: 5px;
+    background-color: #faa32b;
+}
+
+
+.dropdown{
+    padding-top: 0.7%;
+    display: none;
+    position: absolute;
+    background-color: #237194;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+
+.dropdown a{
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown a:hover{
+    border-radius: 0;
+    background-color: #faa32b;
+}
+
+.other:hover .dropdown{
+    display: block;
+}
+
+.active{
+    background-color: #faa32b;
+}
+
+.icon-active{
+    color: #faa32b;
+}
+
+
+
+/******************************
+        FOOTER STYLE
+******************************/
+
+.footer{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    background-color: #237094;
+}
+
+.footer-table{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+
+.footer-table tbody tr:hover{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    background-color: #237094;
+
+}
+
+.footer-table tbody tr td{
+    margin: 0%;
+    padding: 0.4%;
+    color: #f1f1f2;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: auto;
+}
+
+.footer-table tbody tr td b a{
+    font-weight: bolder;
+    color: #faa32b;
+}
+
+/*BOTTOM TO UP BTN STYLE*/
+
+#backTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: #00b9d6;
+    color: white;
+    cursor: pointer;
+    padding-top: 2px;
+    padding-bottom: 8px;
+    padding-left: 9px;
+    padding-right: 9px;
+    border-radius: 4px;
+  }
+  
+#backTopBtn:hover {
+    color: #faa32b;
+    transform: translateY(-4px);
+    background-color: #237194;
+}
+
+
+/* PROF-ICON STYLING */
+
+.student-prof{
+    margin-bottom: 0;
+    background-color: #237194;
+}
+
+.student-prof:hover{
+    background-color: #237194;
+}
+
+.logout{
+    margin-bottom: 0;
+    background-color: #237194;
+}
+
+.logout:hover{
+    background-color: #237194;
+}
+
+.prof-logout{
+    margin: 0;
+    padding: 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+
+
+/***********************
+*   STUDENTS DASHBOARD
+************************/
+
+/***** OVER ALL CONTAINER *****/
+
+.container{
+    margin: 25px;
+    padding: 30px;
+    border-radius: 5px;
+    max-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);   
+    background-color: rgb(220, 220, 220);
+}
+
+/***** CONTENT *****/
+
+.content{
+    margin-top: 1%;
+    margin-left: 4%;
+    margin-right: 4%;
+    padding: 3%;
+    align-items: center;
+    font-size: 1rem;
+    font-family: Calibri;
+    border-radius: 15PX;
+    height: 50%;
+    overflow: hidden;
+    box-shadow: 0px 18px 20px 10px rgba(0,0,0,0.2);
+    background-color: #f1f1f2ae;  
+}
+
+.student-photo{
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    display: block;
+}
+
+table{
+    margin-top: 5%;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;   
+    width: 70%;
+}
+
+.table-data{
+    margin-top: 2%;
+    padding: 2%;
+    height: 400px;
+    overflow: scroll;
+}
+
+tr,td{
+    margin: 0%;
+    padding: 2%;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid rgb(165, 165, 165);
+}
+
+tr:hover {
+    background-color: #00b9d6d6;
+}
+
+.marq1{
+    margin: 1%;
+    font-size: 1.2rem;
+    font-family: Calibri;
+}
+
+
+
+/**********************
+*   SEM-MARKS STYLING
+***********************/
+
+.dropdown2{
+    padding-top: 0.7%;
+    display: none;
+    position: absolute;
+    background-color: #237194;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+}
+
+.dropdown2 a{
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown2 a:hover{
+    border-radius: 0;
+    background-color: #faa32b;
+}
+
+.odd-even:hover .dropdown2{
+    display: block;
+}
+
+
+.sem-mark{
+    margin: 0%;
+    padding: 0%;
+}
+
+.sem-marks-table{
+    margin: 2% 0% 3% 0%;
+    padding: 0%;
+    width: 100%;
+}
+
+.sem-marks-table thead{
+    padding: 2%;
+    text-align: justify;
+    color: #f1f1f2;
+    font-weight: bold;
+    font-family: Arial;
+    background-color: #237094;
+}
+
+.sem-marks-table tr td{
+    text-align: justify;
+    cursor: auto;
+}
+
+.sem-marks-table thead tr:hover{
+    background-color: #237094;
+}
+
+.gpa-view{
+    margin: 1%;
+    padding: 1%;
+    color: #f1f1f2;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #faa32b;
+}
+
+.name-show{
+    text-align: center;
+    font-style: italic;
+    font-family: 'Times New Roman';
+}
+
+
+
+/************************
+*   GRIEVANCE PAGE STYLE
+*************************/
+
+/*FORM STYLE*/
+
+.grievance-form{
+    margin: auto;
+
+    background-repeat: no-repeat;
+    background-position: top center;
+    
+}
+
+.grievance-form-style{
+    margin: 1%;
+    padding: 1%;
+}
+
+
+
+/******************************
+*   ACHIEVEMENTS PAGE STYLING
+*******************************/
+
+input[type=text], select, textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #f1f1f2;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #237094;
+    color: white;
+    font-weight: bolder;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #faa32b;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f1f1f2;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .achievements{
+
+  }
+
+  .achievements-table thead{
+    padding: 2%;
+    color: #f1f1f2;
+    font-weight: bold;
+    font-family: Arial;
+    background-color: #237094;
+}
+
+.achievements-table thead tr:hover{
+    background-color: #237094;
+}
+
+.achievements-table thead tr td{
+    cursor: auto;
+}
+
+.achievements-table thead tr td a:hover{
+    color: #faa32b;
+}
+
+
+
+/*****************************
+  INTERNAL MARKS PAGE STYLING
+******************************/
+
+.internal-marks-table{
+    width: 100%;
+}
+.internal-marks-table thead{
+    padding: 2%;
+    color: #f1f1f2;
+    font-weight: bold;
+    font-family: Arial;
+    background-color: #237094;
+}
+
+.internal-marks-table thead tr:hover{
+    background-color: #237094;
+}
+
+.internal-marks-table thead tr td{
+    cursor: auto;
+}
+
+
+.navjnjk{
+    float: left;
+    margin-left: 28px;
+    font-size: 1.5em;
+    height: 2px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  } @media(max-width: 768px) {
+      .logo {
+      margin-left: 5px; 
+      }
+    }
+
+
+
+.nav-logo{
+    display:block;
+}
+/****************************
+* OVERALL RESPONSIVE LAYOUT
+*****************************/
+
+  @media screen and (max-width: 870px) {
+    .top-nav img{
+        width: 95%;
+    }
+
+    nav ul{
+        margin: 0%;
+        padding: 0.5%;
+        padding-bottom: 0%;
+        list-style-type: none;
+        font-family: 'Times New Roman';
+        overflow:hidden;
+        float: right;
+    }
+    
+    nav ul li{
+        float: left;
+        padding: 0% 1% 0% 0%;
+    }
+    
+    nav ul li:last-child{
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    nav ul li a{
+        padding: 0.3rem 1.0rem;
+        font-size: 0.8rem;
+    }
+    
+    .dropdown{
+        padding-top: 0.7%;
+        min-width: 90px;
+    
+    }
+    
+    .dropdown a{
+        float: none;
+        color: white;
+        padding: 10px 14px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .material-symbols-outlined {
+        font-size: 25px;
+    }
+
+        
+    .dropdown2{
+        padding-top: 0.7%;
+        min-width: 70px;
+    
+    }
+    
+    .dropdown2 a{
+        float: none;
+        color: white;
+        padding: 10px 14px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+    }
+    
+  }
+
+  @media screen and (max-width: 735px) {
+    
+    .student-photo{
+        margin: auto;
+        width: 100px;
+        height: 100px;
+        display: block;
+    }
+
+    table{
+        width: 100%;
+    }
+    tr,td{
+        padding: 1%;
+    }
+
+    td{
+        font-size: 15px;
+    }
+  }
+
+/* Default styles */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px; /* Match the height of the logo */
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+#navbar ul li {
+    margin: 0 10px; /* Adjust spacing between items as needed */
+}
+
+.logo {
+    width: 250px;
+    height: 100%; /* Use 100% height to fill the entire height of the navbar */
+}
+
+.prof-logout {
+    float: right; /* Align the div to the right */
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 600px) {
+    #navbar {
+        flex-direction: column;
+        height: auto; /* Remove fixed height */
+    }
+
+    #navbar ul {
+        flex-direction: row;
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    #navbar ul li {
+        margin: 10px 0; /* Adjust margin */
+    }
+
+    .logo {
+        width: 100%; /* Make logo width full */
+        height: auto; /* Let the height adjust according to the aspect ratio */
+    }
+
+    .prof-logout {
+        float: none; /* Remove float */
+        text-align: center; /* Align items to the center */
+    }
+}
